@@ -61,8 +61,17 @@ public Dog init(String name,int age){
 }
 //创建和初始化一起
 Dog cola = new Dog("cola",11);
-9.
-
+9.  copy数组
+    int[] a;
+//复制 数组全部元素
+    int[] c =Arrays.copyOf(a, a.length);
+//复制 数组下标from到to的元素
+    int[] d = Arrays.copyOf(a,from,to);
+//数组所有元素全部填入 -1
+Arrays.fill(a,-1);
+//数组中下标从 from到to赋值为 -1
+Arrays.fill(a,from,to,-1);
+10.
 
 
 ```
