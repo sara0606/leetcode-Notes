@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.stream.Collectors;
 public class Kata{
   public static String reverseWords(final String original){
+    //map(s->x)  s
     return original.trim().isEmpty()?original:Arrays.stream(original.split(" ")).map(s->new StringBuilder(s).reverse().toString()).collect(Collectors.joining(" "));
   }
 }
