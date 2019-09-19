@@ -41,7 +41,7 @@ class Solution{
 //                       .collect(Collectors.joining(" "));                 
       
         //转成流，distinct()去重
-        //
+        //collect
          return  Arrays.stream(s.split(" ")).distinct().collect(Collectors.joining(" "));
     }
 }
