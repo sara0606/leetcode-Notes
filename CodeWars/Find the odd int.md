@@ -18,6 +18,7 @@ public class FindOdd {
 }
 ```
 ```java
+2.Map
 import java.util.*;
 public class FindOdd {
   public static int findIt(int[] a) {
@@ -39,4 +40,38 @@ public class FindOdd {
   }
 }
 ```
+```java
+3.
+//数组转换成链表
+int[] a;
+List list = Arrays.asList(a);
+//代码
+import static java.util.Arrays.*;
+public class FindOdd {
+	public static int findIt(int[] a) {
+        List list = Arrays.asList(a);
+        Collections.sort(list);
+        int i = 0;
+        while(i < list.size()){
+            int j = i+1;
+            while(j < list.size() && list.get(j) == list.get(i))
+                j++;
+            int c= j - i;
+            // 奇数的二进制尾数是1，与1做位运算后，是1
+            if((c&1 )==1) return list.get(i);
+            i =j;        
+        }
+    }
+}
 
+
+
+    
+
+```
+
+* ~~a~~
+* b
+* c
+  * c1
+  * c2
