@@ -37,3 +37,21 @@ class Solution{
 7. setCharAt（int index, char ch）
   给字符的某个位置上设定固定值
 
+```java
+import java.lang.StringBuilder;
+import java.util.regex.*;
+class Solution{
+
+  static String toCamelCase(String s){
+    Pattern pattern = Pattern.compile("([-_]\\w)");
+    Matcher matcher = pattern.matcher(s);
+    while(matcher.find()){
+      String old = matcher.group(1);
+      String neo = old.substring(1).toUpperCase();
+      s = s.replace(old, neo);
+    }
+    return s;
+  }
+}
+```
+
