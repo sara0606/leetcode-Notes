@@ -1,7 +1,7 @@
 package CodeWars;
 
 /**
- * @author yuanyuan
+ * @author kangzhe
  * @description 7 kyu
  * Histogram - H1
  * @date 2020/8/20 21:38
