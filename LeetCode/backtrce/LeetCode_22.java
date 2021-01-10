@@ -1,3 +1,5 @@
+package backtrce;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +26,6 @@ public class LeetCode_22 {
         if (left < n) {
             combination.append("(");
             backtrace(ret, n, left + 1, right, combination);
-            //尾剪枝
             combination.deleteCharAt(combination.length() - 1);
         }
         //右括号<左括号，可以放入）
